@@ -5,6 +5,7 @@ import { Menu } from './components/Menu';
 import './styles/theme.css';
 import './styles/global.css';
 import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
 // https://chronos-pomodoro-private.vercel.app/settings/
 export function App() {
@@ -25,8 +26,12 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='input'>task</label>
-            <input id='input' type='text' />
+            <DefaultInput
+              labelText='Task'
+              id='input'
+              type='text'
+              placeholder='Digite a tarefa'
+            />
           </div>
 
           <div className='formRow'>
