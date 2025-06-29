@@ -6,6 +6,7 @@ import './styles/theme.css';
 import './styles/global.css';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 
 // https://chronos-pomodoro-private.vercel.app/settings/
 export function App() {
@@ -35,12 +36,11 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Jesus te ama e quer te salvar.</p>
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
